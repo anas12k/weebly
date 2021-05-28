@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="css.css">
+<div id="main-container">
+<div id="signin">
+    <h1 id="welcome1">
+        Welcome Friend
+    </h1>
+    <p id="something">To keep connect with us please login with your personal info.</p>
+    <button id="signbtn" type="button"onclick="index()" >Sign In</button>
+</div>
+<div id="signup">
+    <h1 id="create">Create Account</h1>
+    <nav id="social">
+        <img id="img1" src="https://img.icons8.com/android/48/000000/facebook-new.png" onclick="social()"/>
+       <img id ="img2"src="https://img.icons8.com/android/48/000000/twitter.png"onclick="social2()"/>
+       <img id="img3"src="https://img.icons8.com/fluent-systems-regular/48/000000/instagram-new--v1.png"onclick="social3()"/>
+    </nav>
+    <form id="form"> 
+        <input type="text" placeholder="Name" id="fname" name="fname"  > 
+        <!-- <input type="text" placeholder="Last" id="lname" name="lname"><br> -->
+        <!-- <label id="email1">Email:</label><br> -->
+        <input type="email" placeholder="Email" name="email" id="email"><br>
+        <!-- <label id="pass1" >Password:</label><br> -->
+        <input type="password" placeholder="Password" id="pass" name="password">
+        
+    </form>
+    <button id="button" onclick="thankyou()" >Submit</button>
+</div>
+</div>
+
+<script>
+    function index(){
+        window.location.assign('indext.html');
+    }
+    function thankyou(){
+      alert("SignIn successful.");
+    }
+    function social2(){
+        window.location.assign('https://twitter.com/anask_h_a_n/')
+    }
+    function social3(){
+        window.location.assign('https://twitter.com/anask_h_a_n')
+    }
+    function social(){
+        window.location.assign('https://www.facebook.com/profile.php?id=100005558892915')
+    }
+</script>
